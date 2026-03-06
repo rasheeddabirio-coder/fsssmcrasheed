@@ -1,0 +1,182 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f5;
+    color: #333;
+}
+
+/* ================= HEADER ================= */
+.header {
+    text-align: center;
+    background: #0b3d2e;
+    color: white;
+}
+
+.top-bar {
+    background: #145a43;
+    padding: 6px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.lang-toggle button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 3px 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.main{
+    text-align: center;
+    color: black;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* ================= NAVIGATION ================= */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: #145a43;
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* ================= PAGE TITLE ================= */
+.title-box {
+    background: linear-gradient(
+        rgba(231, 240, 237, 0.85)
+    ),
+    url('../image/fsssmc mosques.jpeg') center/cover;
+    text-align: center;
+    padding: 90px 20px;
+    color:black;
+}
+
+.title-box h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.title-box p {
+    font-size: 18px;
+}
+
+/* ================= LEARN GRID ================= */
+.learn-grid {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* ================= LEARN BOX ================= */
+.learn-box {
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #e8f5ef 70%
+    );
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learn-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+.learn-box h2 {
+    color: #0b3d2e;
+    margin-bottom: 15px;
+}
+
+.learn-box p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.learn-box a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #0b3d2e;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.learn-box a:hover {
+    background: #145a43;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .logo {
+        height: 50px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .title-box h1 {
+        font-size: 30px;
+    }
+}

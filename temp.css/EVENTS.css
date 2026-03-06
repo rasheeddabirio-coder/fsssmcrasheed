@@ -1,0 +1,395 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2f28;
+    background: linear-gradient(to bottom, #eaf6f0, #ffffff);
+}
+
+/* ================= HEADER ================= */
+.header {
+    width: 100%;
+}
+
+/* TOP BAR */
+.top-bar {
+    background: linear-gradient(90deg, #0b3d2e, #127d61);
+    color: #fff;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.lang-toggle button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #e6fff4;
+    padding: 4px 10px;
+    margin-left: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.lang-toggle button:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* MAIN HEADER */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.logo {
+    height: 65px;
+}
+
+/* ================= NAVIGATION ================= */
+.nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #127d61;
+    transition: 0.3s;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 220px;
+    display: none;
+    list-style: none;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.submenu li a {
+    display: block;
+    padding: 12px 16px;
+    color: #0b3d2e;
+}
+
+.submenu li a:hover {
+    background: #eaf6f0;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* ================= DONATE BUTTON ================= */
+.donate-btn {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    background: linear-gradient(135deg, #ffd700, #ffb703);
+    color: #0b3d2e;
+    padding: 14px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+    z-index: 999;
+}
+
+.donate-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= HERO ================= */
+.event{
+    
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px 20px;
+    color: #47524a;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* ================= BREADCRUMB ================= */
+.breadcrumb {
+    padding: 15px 40px;
+    font-size: 14px;
+    background: #f2f7f5;
+}
+
+.breadcrumb a {
+    color: #127d61;
+    text-decoration: none;
+}
+
+/* ================= SECTIONS ================= */
+.services-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.services-section.alt {
+    background: linear-gradient(to right, #f2f7f5, #ffffff);
+}
+
+.services-section h2 {
+    color: #0b3d2e;
+    margin-bottom: 20px;
+}
+
+/* ================= GRID ================= */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* ================= EVENT CARD ================= */
+.event-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+}
+
+.event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.event-card .content {
+    padding: 18px;
+}
+
+.event-card h3 {
+    color: #0b3d2e;
+    margin-bottom: 8px;
+}
+
+.event-card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #127d61, #0b3d2e);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+/* ================= LIST ================= */
+.amenities-list {
+    list-style: none;
+}
+
+.amenities-list li {
+    background: #fff;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    border-left: 5px solid #127d61;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ================= FOOTER (FLAT – NO BOXES) ================= */
+.footer {
+    background: linear-gradient(135deg, #0b3d2e, #127d61);
+    color: #fff;
+    padding: 50px 20px 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer a {
+    color: #e6fff4;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}/* ================= SECTION BOXING ================= */
+.services-section {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+    margin-bottom: 60px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.services-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.12);
+}
+
+/* ALT SECTION */
+.services-section.alt {
+    background: linear-gradient(135deg, #f2f7f5, #ffffff);
+}
+
+/* ================= EVENT CARD ENHANCEMENT ================= */
+.event-card {
+    position: relative;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+.event-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0 2px rgba(18,125,97,0.15);
+    pointer-events: none;
+}
+
+/* ================= CALENDAR (CENTERED BOX) ================= */
+.prayer-widget {
+    max-width: 520px;
+    margin: 40px auto 0;
+    padding: 30px 25px;
+    background: linear-gradient(135deg, #ffffff, #eaf6f0);
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prayer-widget:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 42px rgba(0,0,0,0.16);
+}
+
+.prayer-widget strong {
+    display: block;
+    font-size: 22px;
+    color: #0b3d2e;
+    margin-bottom: 10px;
+}
+
+.prayer-widget span {
+    color: #127d61;
+    font-weight: 600;
+}
+
+/* ================= SERVICE BOX ================= */
+.service-box {
+    background: #ffffff;
+    padding: 26px 22px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 38px rgba(0,0,0,0.15);
+}
+
+/* ================= GALLERY IMAGES ================= */
+.services-grid img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.services-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.18);
+}
+
+/* ================= SMOOTH SECTION ENTRY ================= */
+.services-section {
+    animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

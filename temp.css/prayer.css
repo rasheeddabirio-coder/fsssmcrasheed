@@ -1,0 +1,385 @@
+/* ================= GLOBAL RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f5;
+    color: #333;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background: #0b3d2e;
+    color: white;
+}
+
+.top-bar {
+    background: #145a43;
+    padding: 6px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.prayer-ticker {
+    font-weight: 600;
+}
+
+.lang-toggle button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 3px 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    height: 65px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: #145a43;
+    min-width: 200px;
+    z-index: 99;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* ================= PAGE WRAPPER ================= */
+.page-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ================= PAGE TITLE ================= */
+.prayer {
+    background: linear-gradient(135deg, #ffffff 0%, #eef6f2 60%);
+    padding: 40px 30px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+}
+
+.prayer h1 {
+    color: #0b3d2e;
+    margin-bottom: 10px;
+}
+
+/* ================= NEXT PRAYER WIDGET ================= */
+.next-prayer {
+    background: linear-gradient(135deg, #ffffff 0%, #e8f5ef 60%);
+    padding: 35px 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.next-prayer h2 {
+    color: #0b3d2e;
+    margin-bottom: 10px;
+}
+
+.countdown {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #145a43;
+    margin-bottom: 20px;
+}
+
+.prayer-status {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.prayer-status li {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid #cfded7;
+    background: white;
+}
+
+.prayer-status li.active {
+    background: #0b3d2e;
+    color: white;
+    font-weight: bold;
+}
+
+/* ================= QIBLA WIDGET ================= */
+.qibla-widget {
+    background: linear-gradient(135deg, #ffffff 0%, #eef6f2 60%);
+    padding: 35px 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.qibla-widget h2 {
+    color: #0b3d2e;
+    margin-bottom: 10px;
+}
+
+.qibla-angle {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.qibla-compass {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.compass-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid #145a43;
+    position: relative;
+}
+
+.qibla-arrow {
+    width: 4px;
+    height: 45px;
+    background: gold;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translateX(-50%);
+}
+
+/* ================= PRAYER BOXES ================= */
+.prayer-box {
+    background: linear-gradient(135deg, #ffffff 0%, #e8f5ef 60%);
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.prayer-box h2 {
+    color: #0b3d2e;
+    margin-bottom: 10px;
+}
+
+.prayer-box ul {
+    padding-left: 20px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #0b3d2e;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ================= DONATE BUTTON ================= */
+.donate-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: gold;
+    padding: 14px 22px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+}
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .title-box h1 {
+        font-size: 30px;
+    }
+}
+/* ================= PRAYER GRID ================= */
+.prayer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.prayer-daily,
+.jummah {
+    background: linear-gradient(135deg, #ffffff 0%, #e8f5ef 60%);
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.prayer-daily h2,
+.jummah h2 {
+    color: #0b3d2e;
+    margin-bottom: 15px;
+}
+/* ================= DAILY PRAYER LIST ================= */
+#dailyPrayerList {
+    list-style: none;
+    padding: 0;
+}
+
+#dailyPrayerList li {
+    padding: 10px 14px;
+    border-bottom: 1px solid #dde7e2;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+#dailyPrayerList li:last-child {
+    border-bottom: none;
+}
+
+/* Current Prayer */
+#dailyPrayerList li.current {
+    background: #145a43;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Next Prayer */
+#dailyPrayerList li.next {
+    background: gold;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+}
+/* ================= PRAYER STATUS PILLS ================= */
+.prayer-status li {
+    transition: all 0.3s ease;
+}
+
+/* CURRENT prayer */
+.prayer-status li.current {
+    background: #145a43;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* NEXT prayer */
+.prayer-status li.active {
+    background: gold;
+    color: black;
+    font-weight: bold;
+}
+/* ================= JUM'AH STATES ================= */
+.jummah.active {
+    border-left: 6px solid gold;
+}
+
+.jummah.current {
+    border-left: 6px solid #145a43;
+}
+/* ================= QIBLA ANIMATION ================= */
+.qibla-arrow {
+    transition: transform 0.8s ease-in-out;
+}
+.page-wrapper > div { animation: pageEnter 0.7s ease; }
+/* ================= COUNTDOWN ================= */
+.countdown {
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+/* ================= MOBILE REFINEMENTS ================= */
+@media (max-width: 600px) {
+
+    .prayer-status {
+        gap: 6px;
+    }
+
+    .prayer-status li {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .compass-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .qibla-arrow {
+        height: 38px;
+    }
+}
