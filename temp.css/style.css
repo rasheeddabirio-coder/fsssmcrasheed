@@ -17,7 +17,6 @@ body {
   margin-left: 20px;
   border-radius: 40px;
   text-decoration: none;
-  
 }
 
 /* HEADER */
@@ -335,4 +334,88 @@ body {
   color: black;
   font-weight: bold;
   text-decoration: none;
+}
+/* ================= GLOBAL LAYOUT ================= */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* navigation */
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+/* grids */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* buttons touch area */
+.btn {
+  padding: 12px 20px;
+  font-size: 16px;
+}
+/* ================= TABLET ================= */
+
+@media (max-width: 1199px) {
+  /* navigation collapses slightly */
+  .menu {
+    gap: 15px;
+    font-size: 15px;
+  }
+
+  /* grids become 2 columns */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* images slightly smaller */
+  .hero img {
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .main-header {
+    padding: 15px 20px;
+  }
+}
+/* ================= TABLET ================= */
+
+@media (max-width: 1199px) {
+  /* navigation collapses slightly */
+  .menu {
+    gap: 15px;
+    font-size: 15px;
+  }
+
+  /* grids become 2 columns */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* images slightly smaller */
+  .hero img {
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .main-header {
+    padding: 15px 20px;
+  }
+}
+.hamburger {
+  display: none;
 }

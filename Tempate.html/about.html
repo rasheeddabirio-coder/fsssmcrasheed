@@ -28,9 +28,12 @@
     <div class="main-header">
 
         <!-- logo -->
-      <a href="/Tempate.html/home.html" class="logo-link">
+      <a href="/Tempate.html/index.html" class="logo-link">
     <img src="../image/fsssmc.jpeg" alt="FSSSMC Mosque Logo" class="logo">
 </a>
+
+<!-- HAMBURGER BUTTON -->
+<div class="hamburger" onclick="toggleMenu()">☰</div>
 
         <!-- NAVIGATION -->
         <nav class="nav">
@@ -69,9 +72,9 @@
                 </li>
 
                 <li><a href="/Tempate.html/EVENTS.html">Events</a></li>
-                <li><a href="#">Learn</a></li>
-                <li><a href="#">Get Involved</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/Tempate.html/learn.html">Learn</a></li>
+                <li><a href="/Tempate.html/get involve.html">Get Involved</a></li>
+                <li><a href="/Tempate.html/contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -223,15 +226,6 @@
     </ul>
 </section>
 
-<script>
-document.querySelectorAll('.dropdown-toggle').forEach(button => {
-    button.addEventListener('click', () => {
-        const section = button.parentElement;
-        section.classList.toggle('active');
-    });
-});
-</script>
-
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
     <div class="footer-grid">
@@ -250,10 +244,10 @@ document.querySelectorAll('.dropdown-toggle').forEach(button => {
 
         <div>
             <h4>Quick Links</h4>
-            <a href="#">About</a><br>
-            <a href="#">Prayer</a><br>
-            <a href="#">Events</a><br>
-            <a href="#">Donate</a>
+            <a href="/Tempate.html/about.html">About</a><br>
+            <a href="/Tempate.html/prayer.html">Prayer</a><br>
+            <a href="/Tempate.html/EVENTS.html">Events</a><br>
+            <a href="/Tempate.html/get involve.html">Donate</a>
         </div>
 
         <div>
@@ -264,10 +258,11 @@ document.querySelectorAll('.dropdown-toggle').forEach(button => {
     </div>
 
     <p class="copyright">
-        © 2025 FSSSMC Mosque. All Rights Reserved.
+        © 2025 FSSSMC Mosque. by rasheed.
     </p>
 </footer>
 
 <script src="/js/prayer.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
