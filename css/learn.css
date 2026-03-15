@@ -37,6 +37,7 @@ body {
 .main{
     text-align: center;
     color: black;
+    margin-top:40px
 }
 .main-header {
     display: flex;
