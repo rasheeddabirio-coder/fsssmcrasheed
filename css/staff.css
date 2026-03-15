@@ -1,0 +1,84 @@
+/* PAGE TITLE */
+.page-title{
+text-align:center;
+font-size:36px;
+margin:50px 0;
+color:#0b3d2e;
+}
+
+/* GENERAL BOX */
+.info-box{
+background:white;
+padding:30px;
+margin:30px auto;
+max-width:1000px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* MEMBER LIST */
+.member-list{
+list-style:none;
+padding:0;
+margin-top:20px;
+}
+
+.member-list li{
+padding:10px;
+border-bottom:1px solid #eee;
+}
+
+/* COMMITTEE TITLE */
+.committee-title{
+text-align:center;
+margin-top:60px;
+color:#0b3d2e;
+}
+
+/* COMMITTEE GRID */
+.committee-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+max-width:1200px;
+margin:40px auto;
+}
+
+/* COMMITTEE BOX */
+.committee-box{
+background:linear-gradient(135deg,#ffffff,#e9f5f0);
+padding:25px;
+border-radius:10px;
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.committee-box:hover{
+transform:translateY(-6px);
+}
+
+.committee-box h3{
+color:#0b3d2e;
+margin-bottom:15px;
+}
+
+.committee-box ul{
+padding-left:18px;
+}
+
+.committee-box li{
+margin-bottom:6px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.page-title{
+font-size:28px;
+}
+
+.info-box{
+padding:20px;
+}
+
+}
