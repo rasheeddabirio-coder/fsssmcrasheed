@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FSSSMC Mosque | get invovle</title>
+    <title>FSSSMC Mosque | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/get involve.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/prayer.css">
 </head>
 <body>
@@ -13,6 +13,8 @@
 <!-- ================= HEADER ================= -->
 <header class="header">
 
+    <!-- TOP BAR -->
+     
     <div class="top-bar">
        </div>
         <div class="prayer-ticker" id="prayerTicker">
@@ -24,6 +26,7 @@
         </div>
     </div>
 
+
     <div class="main-header">
 
             
@@ -31,9 +34,9 @@
       <a href="/html/index.html" class="logo-link">
     <img src="../image/fsssmc.jpeg" alt="FSSSMC Mosque Logo" class="logo">
 </a>
+
 <!-- HAMBURGER BUTTON -->
 <div class="hamburger" onclick="toggleMenu()">☰</div>
-
 
         <nav class="nav">
             <ul class="menu">
@@ -81,60 +84,66 @@
 
 <a href="/html/get involve.html" class="donate-btn">Donate</a>
 
-<section class="page-header">
-    <h1>Get Involved</h1>
-    <p>Support • Serve • Strengthen the Community</p>
+<!-- PAGE HEADER -->
+<section class="contact">
+    <h1>Contact Us</h1>
+    <p>Reach Out • Visit • Stay Connected</p>
 </section>
 
-<section class="involved-grid">
+<!-- CONTACT GRID -->
+<section class="contact-grid">
 
-    <!-- DONATE -->
-    <div class="involved-box highlight">
-        <h2>Donate</h2>
+    <!-- LOCATION -->
+    <div class="contact-box">
+        <h2>Location & Directions</h2>
         <p>
-            Your donation helps maintain the mosque, support education,
-            welfare programs, and community services.
+            Federal Site & Service Scheme Muslim Community Mosque  
+            <br>Lagos, Nigeria
         </p>
-
-        <div class="donate-buttons">
-            <a href="#" class="btn donate-btn">Paystack</a>
-            <a href="#" class="btn donate-btn">Bank Transfer</a>
-        </div>
+        <a href="#" class="btn">View on Map</a>
     </div>
 
-    <!-- VOLUNTEER -->
-    <div class="involved-box">
-        <h2>Volunteer</h2>
-        <p>
-            Serve the community by volunteering your time and skills
-            in mosque activities and outreach programs.
-        </p>
-        <a href="#" class="btn">Join as Volunteer</a>
+    <!-- CONTACT FORM -->
+    <div class="contact-box">
+        <h2>Contact Form</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
 
-    <!-- MEMBERSHIP -->
-    <div class="involved-box">
-        <h2>Membership</h2>
-        <p>
-            Become a registered member of the mosque and participate
-            actively in its growth and development.
-        </p>
-        <a href="#" class="btn">Become a Member</a>
+    <!-- STAFF DIRECTORY -->
+    <div class="staff">
+        <h2>Staff Directory</h2>
+        <ul class="staff-list">
+            <li><strong>Chief Imam:</strong> ;loading...</li>
+            <li><strong>Secretary:</strong> loading..</li>
+            <li><strong>Admin Officer:</strong> loading...</li>
+            <li><strong>Youth Coordinator:</strong>  Loading...</li>
+        </ul>
+        <a href="#">staffs</a>
     </div>
 
-    <!-- SPONSOR -->
-    <div class="involved-box">
-        <h2>Sponsor Programs</h2>
+    <!-- NEWSLETTER -->
+    <div class="contact-box highlight">
+        <h2>Subscribe to Newsletter</h2>
         <p>
-            Sponsor mosque programs including Ramadan activities,
-            youth programs, and Islamic education.
+            Get updates on prayers, events, and mosque programs
+            delivered directly to your inbox.
         </p>
-        <a href="#" class="btn">Sponsor a Program</a>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
     </div>
 
 </section>
 
-<!-- ================= FOOTER ================= -->
+
 <footer class="footer">
     <div class="footer-grid">
 
@@ -147,15 +156,15 @@
             <h4>Today's Prayers</h4>
            <ul id="footerPrayerList">
     <li>Loading...</li>
-</ul>
+            </ul>
         </div>
 
         <div>
             <h4>Quick Links</h4>
-            <a href="/html/about.html">About</a><br>
+            <a href="/Tempate.html/about.html">About</a><br>
             <a href="/html/prayer.html">Prayer</a><br>
             <a href="/html/EVENTS.html">Events</a><br>
-            <a href="/html/get involve.html">Donate</a>
+            <a href="/html/get-involve.html">Donate</a>
         </div>
 
         <div>
@@ -169,7 +178,7 @@
         © 2025 FSSSMC Mosque. by rasheed.
     </p>
 </footer>
-</div>
-
+<script src="/js/prayer.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
